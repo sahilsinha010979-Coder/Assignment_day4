@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: linear-gradient(135deg, #0284c7, #1e293b);
+        color: #333;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #AFA2FF;
+        padding: 15px 30px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .logo a{
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 20px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: #636B61;
+        font-size: 16px;
+        transition: 0.3s ease;
+        scale: 1;
+    }
+    .main{
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+
+
+    }
+    .main h2{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 280px);
+        gap: 35px;
+    }
+    .product{
+        background-color: #7A89C2;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .product img{
+        height: auto;
+        width: 100%;
+        object-fit: conatain;
+        border-radius: 8px;
+        margin-bottom: 15px;
+
+    }
+    .product h3{
+        font-size:20px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+    .product .description {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 15px;
+}
+    .product .price{
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 15px;
+        display: block;
+    }
+    .add-to-cart{
+         background-color: #1e293b;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.3s;
+    }
+    .add-to-cart:hover{
+        background-color: #16a34a;
+    }
+    </style>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/1316/1316/xif0q/headphone/w/v/0/premium-quality-handsfree-ys-earphones-with-mic-for-sports-original-imahh3ehcadh4kkh.jpeg?q=90" alt="gbsdf">
+                <h3>Wired Earphones</h3>
+                <p class="description">With active noise cancellation</p>
+                <span class="price">₹180</span>
+                <button class="add-to-cart">🛒Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/1316/1316/xif0q/mouse/n/i/z/tc-m500-flipkart-smartbuy-enriched-transparent-original-imahbkfpaeazqdh8.png?q=90" alt="gbsdf">
+                <h3>Wireless Mouse</h3>
+                <p class="description">With AI button and 4000 DPI</p>
+                <span class="price">₹300</span>
+                <button class="add-to-cart">🛒Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/1316/1316/xif0q/shoe/k/t/w/6-leafn-6-0-urbanbox-white-original-imahnsfhphhfdaeg.jpeg?q=90" alt="gbsdf">
+                <h3>Running Shoes</h3>
+                <p class="description">Lightweight and comfortable for running</p>
+                <span class="price">₹450</span>
+                <button class="add-to-cart">🛒Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/1316/1316/xif0q/keyboard/gaming-keyboard/l/a/6/gxgpk-09-geonix-original-imahhyfaffwqpg77.jpeg?q=90" alt="gbsdf">
+                <h3>Gaming Keyboard</h3>
+                <p class="description">Mechanical switches and RGB lighting</p>
+                <span class="price">₹1500</span>
+                <button class="add-to-cart">🛒Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/1316/1316/xif0q/headphone/o/x/f/-enriched-transparent-original-imagrzqdgyvcerry.png?q=90" alt="gbsdf">
+                <h3>Wireless earphones
+                </h3>
+                <p class="description">With active noise cancellation</p>
+                <span class="price">₹290</span>
+                <button class="add-to-cart">🛒Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/1316/1316/xif0q/remote-control-toy/s/y/j/remote-control-toy-car-electric-chargeable-3d-lightning-black-1-original-imahmstgajqpetg4.jpeg?q=90" alt="gbsdf">
+                <h3>Remote Control Toy</h3>
+                <p class="description">Electric chargeable 3D lightning</p>
+                <span class="price">₹190</span>
+                <button class="add-to-cart">🛒Add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
